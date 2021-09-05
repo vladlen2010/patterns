@@ -1,4 +1,4 @@
-package patterns.factory
+package patterns.static_factory_method
 
 fun main() {
     println(NumberMaster.valueOf("123"))

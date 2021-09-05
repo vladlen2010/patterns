@@ -1,4 +1,4 @@
-package patterns.factory
+package patterns.factory_method
 
 import java.util.*
 

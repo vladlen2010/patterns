@@ -1,7 +1,7 @@
-package patterns.factory
+package patterns.abstract_factory
 
-import patterns.factory.InfantryUnits.*
-import patterns.factory.VehicleUnits.*
+import patterns.abstract_factory.InfantryUnits.*
+import patterns.abstract_factory.VehicleUnits.*
 
 fun main() {
 

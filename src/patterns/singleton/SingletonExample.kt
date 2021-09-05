@@ -1,4 +1,4 @@
-package patterns
+package patterns.singleton
 
 import java.util.concurrent.atomic.AtomicInteger
 

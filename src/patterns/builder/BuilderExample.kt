@@ -1,6 +1,13 @@
-package patterns
+package patterns.builder
 
-data class Mail(
+fun main() {
+    val mail = Mail("hello").message("How are you?")
+    val mailBuilder = MailBuilder("hello").title("Summer letter").build()
+    println(mail._message)
+    println(mailBuilder.title)
+}
+
+private data class Mail(
     val to: String,
     var title: String = "",
     var _message: String = "",
@@ -17,7 +24,7 @@ data class Mail(
 /**
  * builder design pattern
  */
-class MailBuilder(to: String) {
+private class MailBuilder(to: String) {
     private var mail: Mail = Mail(to)
     fun title(title: String): MailBuilder {
         mail.title = title
@@ -31,11 +38,4 @@ class MailBuilder(to: String) {
     fun build(): Mail {
         return mail
     }
-}
-
-fun main() {
-    val mail = Mail("hello").message("How are you?")
-    val mailBuilder = MailBuilder("hello").title("Summer letter").build()
-    println(mail._message)
-    println(mailBuilder.title)
 }
