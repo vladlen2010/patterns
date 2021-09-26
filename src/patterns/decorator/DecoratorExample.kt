@@ -144,3 +144,5 @@ private class CompressorDecorator(source: DataSource) : DataSourceDecorator(sour
         }
     }
 }
+
+//endregion
